@@ -1,0 +1,131 @@
+:root {
+    --hintergrund-farbe: #000318;
+    --kachel-farbe: rgb(68, 67, 87);
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--hintergrund-farbe);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+}
+
+.header {
+    color: rgb(197, 197, 197);
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.field-up,
+.field-mid,
+.field-bot {
+    height: 16.6vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.tl,
+.tc,
+.bl,
+.bc,
+.ml,
+.mc {
+    background-color: var(--kachel-farbe);
+    min-width: 16vh;
+    height: 16vh;
+    margin-right: 0.6vh;
+}
+
+.tr,
+.mr,
+.br {
+    background-color: var(--kachel-farbe);
+    min-width: 16vh;
+    height: 16vh;
+}
+
+.bild {
+    width: 14vh;
+    height: 14vh;
+    margin: 1vh;
+}
+
+.gewonnen {
+    position: absolute;
+    min-width: 450px;
+    height: 20vh;
+    background-color: #4b5b85;
+    top: 85vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.button {
+    background-color: rgb(55, 55, 107);
+    color: rgb(197, 197, 197);
+    width: fit-content;
+    font-size: 35px;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 90vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.text {
+    position: absolute;
+    font-size: 45px;
+    top: 75vh;
+    left: 50vw;
+    user-select: none;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: rgb(197, 197, 197);
+}
+
+.gewinner-screen-on {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.gewinner-screen-off {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nope-on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.nope-off {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
+    opacity: 0;
+    pointer-events: none;
+}
